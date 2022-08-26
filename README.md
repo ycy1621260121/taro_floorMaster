@@ -1,7 +1,5 @@
 ### taro + typescript + less + taro-hooks + eslint + webpack5的小程序集合项目
 
-项目地址：https://github.com/ycy1621260121/taro_collections
-
 ```
 项目背景：需在一套代码中集成多个小程序项目，组件共用、 可维护、拓展性高
 设计思想：组件化，封装共用的css、js，按需引入，凡在代码结构上有差异的都以项目名称区分，各自独立，在指定js配置项目切换
@@ -33,3 +31,32 @@
 <img src="src/images/brainMap.png">
 
 taro-hooks文档：https://innocces.github.io/taro-hooks/#/
+
+
+# 操作指令
+
+### 项目启动
+```
+--npm--
+npm run dev:h5(端)
+或者 npm run dev:h5(端) --pro=项目名称  //根据项目名称启动，无需修改配置中的项目名称
+
+--yarn--
+yarn dev:weapp(端)
+或者 yarn dev:weapp(端) --pro=项目名称  //根据项目名称启动，无需修改配置中的项目名称
+```
+
+
+### 项目打包
+```
+--npm--
+npm run build:h5(端)
+或者 npm run build:h5(端) --pro=项目名称  //根据项目名称启动，无需修改配置中的项目名称
+
+--yarn--
+yarn build:weapp(端)
+或者 yarn build:weapp(端) --pro=项目名称  //根据项目名称启动，无需修改配置中的项目名称
+```
+
+# 项目指向
+### 在本项目根目录下可找到指定的、已经打包的、各个项目的文件夹，在每个项目的文件夹下有各个终端的文件，指向各个终端文件即可访问
